@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0 6rem;
     font-style: Roboto;
 }
 .home .header {
@@ -28,18 +28,17 @@ body {
 }
 .home .header .header-link {
     display: flex;
-    
+    gap: 1rem;
 }
 .home .header .header-link li {
     list-style: none;
-    margin-right: 1rem;
 }
 .home .home-main {
     flex-basis: auto;
     display: flex;
-}
-.home .home-main .home-main-left {
     margin: 5rem 0;
+    flex: 1;
+    gap: 1rem;
 }
 .home .home-main .home-main-left h4 {
     font-size: 48px;
@@ -61,25 +60,77 @@ body {
 }
 .home .home-main .home-main-right {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-color: dimgray;
 }
 .home .home-main .home-main-right img {
     width: 100%;
     height: auto;
-
+    border: 5px solid #1F2937;
 }
 
 .Info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 6rem;
+}
+.Info .Info-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+.Info .Info-box .box  {
+    background-color: dimgray;
+}
+.Info .Info-box .box img {
+    border: 5px solid #1F2937;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+.Info .Info-box .box p {
+    text-align: center;
 }
 
 .Quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 300;
+}
+.Quote .Quote-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem;
+}
+.Quote .Quote-content .Quote-text{
+    font-style: italic;
+}
+.Quote .Quote-content .Quote-author {
+    text-align: right;
+    font-weight: 600;
 }
 
 .CTA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.CTA .CTA-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #3882F6;
+    padding: 2rem 6rem;
 }
 
 .footer {
     background-color: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
 }
