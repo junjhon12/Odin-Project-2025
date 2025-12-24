@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 body {
@@ -16,56 +15,64 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 0 6rem;
-    font-style: Roboto;
+    font-family: 'Roboto', sans-serif; 
+    height: 30rem;
 }
-.home .header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.home .header .logo {
+.header .logo {
     color: #1F2937;
 }
-.home .header .header-link {
+.header-link { 
     display: flex;
     gap: 1rem;
-}
-.home .header .header-link li {
     list-style: none;
 }
-.home .home-main {
+
+.home-main {
     flex-basis: auto;
     display: flex;
     margin: 5rem 0;
     flex: 1;
     gap: 1rem;
+    width: 90%;
 }
-.home .home-main .home-main-left h4 {
-    font-size: 48px;
+.home-main-left {
+    flex: 1;
+    align-content: center;
+}
+.home-main-left h4 {
+    font-size: 3rem; 
     color: #F9FAF8;
     font-weight: 900;
 }
-.home .home-main .home-main-left p {
-    font-size: 18px;
+.home-main-left p {
+    font-size: 1.125rem; 
     color: #E5E7EB;
 }
-.home .home-main .home-main-left button {
+.home-main-left button {
     background-color: #3882F6;
     color: #E5E7EB;
-    padding: 5px 2rem;
-    border-radius: 10px;
+    padding: 0.625rem 2rem; 
+    border-radius: 0.625rem; 
     cursor: pointer;
     border: none;
-    font-weight: 500;
+    font-weight: 800;
 }
-.home .home-main .home-main-right {
-    display: flex;
+.home-main-right { 
+    flex: 1;
     background-color: dimgray;
 }
-.home .home-main .home-main-right img {
+.home-main-right img {
     width: 100%;
-    height: auto;
-    border: 5px solid #1F2937;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Info {
@@ -75,40 +82,47 @@ body {
     align-items: center;
     padding: 1rem 6rem;
 }
-.Info .Info-box {
+.Info-box { 
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+    width: 60rem;
     gap: 1rem;
-    margin: 1rem 0;
 }
-.Info .Info-box .box  {
-    background-color: dimgray;
-}
-.Info .Info-box .box img {
-    border: 5px solid #1F2937;
+.Info-box .box img {
+    border: 2px solid #3882F6;
     width: 100%;
-    height: 150px;
-    border-radius: 20px;
+    height: 9.375rem; 
+    border-radius: 1.25rem; 
+    flex: 1;
 }
-.Info .Info-box .box p {
+.Info-box .box p {
     text-align: center;
+    flex: 1;
 }
 
 .Quote {
     background-color: #E5E7EB;
-    font-size: 36px;
+    font-size: 2.25rem; 
     color: #1F2937;
     font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 6rem;
 }
-.Quote .Quote-content {
+.Quote-content { 
     display: flex;
     flex-direction: column;
-    padding: 2rem 6rem;
+    width: 60rem;
+    padding: 2rem 0;
+    justify-content: center;
 }
-.Quote .Quote-content .Quote-text{
+.Quote-content .Quote-text{
     font-style: italic;
 }
-.Quote .Quote-content .Quote-author {
+.Quote-content .Quote-author {
     text-align: right;
     font-weight: 600;
 }
@@ -117,14 +131,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin:  6rem;
 }
-.CTA .CTA-main {
+.CTA-main { /* Simplified */
     display: flex;
-    justify-content: center;
     align-items: center;
     border: 5px solid #3882F6;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
+    gap: 7rem;
+    border-radius: 0.625rem; 
+    background-color: #3882F6;
+    color: #F9FAF4;
+}
+.CTA-main .CTA-button button{
+    background-color: transparent;
+    color: #E5E7EB;
+    padding: 0.625rem 2rem; 
+    border-radius: 0.625rem; 
+    cursor: pointer;
+    border: 2px solid #E5E7EB;
+    font-weight: 900;
 }
 
 .footer {
